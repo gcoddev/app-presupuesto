@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Operator Mono';
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  background-color: #6200ffde;
+}
+
+.contenedor {
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor .presupuesto {
+  padding-top: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contenedor .presupuesto .titulo {
+  font-size: 1.5em;
+}
+
+.contenedor .presupuesto .saldo {
+  font-size: 2.2em;
+}
+
+.contenedor .informacion .ingresos {
+  background-color: #2aaec5;
+}
+
+.contenedor .informacion .ficha {
+  width: 70%;
+  max-width: 300px;
+  height: 50px;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor .informacion .ficha .saldo_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transform: translate(55px);
+          transform: translate(55px);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.contenedor .informacion .ficha .saldo_info .porcentaje {
+  margin-left: 10px;
+  font-size: 0.75rem;
+  background-color: #cccc;
+  border-radius: 3px;
+  padding: 3px;
+  color: #000;
+  width: 45px;
+}
+
+.contenedor .informacion .egresos {
+  background-color: #ff500b;
+}
+
+.contenedor .informacion .egresos:hover .saldo_info {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.agregar {
+  width: 100%;
+  background-color: #eeeaea;
+}
+
+.agregar .form {
+  padding: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.agregar .form select, .agregar .form input {
+  padding: 7px;
+  border: 1px solid #e9e6e6;
+  margin: 0 3px;
+}
+
+.agregar .form .descripcion {
+  width: 200px;
+}
+
+.agregar .form .valor {
+  width: 100px;
+}
+
+.agregar .form .btn {
+  cursor: pointer;
+  border: none;
+  color: #03bb13;
+}
+
+.agregar .form .btn ion-icon {
+  font-size: 40px;
+}
+
+.agregar .form .btn ion-icon:hover {
+  color: #037c0d;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+  .form {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

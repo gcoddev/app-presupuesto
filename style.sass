@@ -1,0 +1,102 @@
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+    font-family: 'Operator Mono'
+    font-size: 15px
+
+header
+    width: 100%
+    background-color: #6200ffde
+
+.contenedor
+    font-size: 1rem
+    position: relative
+    text-align: center
+    padding: 20px
+    .presupuesto
+        padding-top: 15px
+        font-weight: bold
+        color: #fff
+        .titulo
+            font-size: 1.5em
+        .saldo
+            font-size: 2.2em
+    .informacion
+        .ingresos
+            background-color: #2aaec5
+
+        .ficha
+            width: 70%
+            max-width: 300px
+            height: 50px
+            margin: 10px auto
+            padding: 10px
+            color: white
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: relative
+            overflow: hidden
+            .saldo_info
+                display: flex
+                align-items: center
+                position: relative
+                transform: translate(55px)
+                transition: transform .4s
+                .porcentaje
+                    margin-left: 10px
+                    font-size: 0.75rem
+                    background-color: #cccc
+                    border-radius: 3px
+                    padding: 3px
+                    color: #000
+                    width: 45px
+
+        .egresos
+            background-color: #ff500b
+            &:hover .saldo_info
+                transform: translate(0)
+                transition: transform .4s
+
+.agregar
+    width: 100%
+    background-color: #eeeaea
+    .form
+        padding: 10px
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+
+        select, input
+            padding: 7px
+            border: 1px solid #e9e6e6
+            margin: 0 3px
+        .descripcion
+            width: 200px
+        .valor
+            width: 100px
+        .btn
+            cursor: pointer
+            border: none
+            color: #03bb13
+            ion-icon
+                font-size: 40px
+                &:hover
+                    color: #037c0d
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+    *
+        font-size: 12px
+
+    .form
+        font-size: 14px

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Presupuesto con JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="presupuesto">
+                <div class="titulo">PRESUPUESTO DISPONIBLE</div>
+                <div class="saldo">3000.00</div>
+            </div>
+            <div class="informacion">
+                <div class="ingresos ficha">
+                    <div class="titulo">INGRESOS</div>
+                    <div>+ 2500.00</div>
+                </div>
+                <div class="egresos ficha">
+                    <div class="titulo">EGRESOS</div>
+                    <div class="saldo_info" id="saldo_info">- 150000.00
+                        <p class="porcentaje porcentaje_egresos">10.56%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="agregar">
+        <div class="form">
+            <select name="in-eg">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input type="text" placeholder="Agregar Descripcion" class="descripcion">
+            <input type="text" placeholder="Valor" class="valor">
+            <button class="btn" onclick="funcionando()">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="ingresos_actualizacion">
+            <div class="titulo_ingreso">INGRESOS</div>
+            <div class="info_ingresos">
+                <div class="descripcion_ingreso">Venta</div>
+                <div class="saldo_ingreso">+ 1500.00</div>
+            </div>
+        </div>
+        <div class="egresos_actualizacion">
+            <div class="titulo_egreso">INGRESOS</div>
+            <div class="info_egresos">
+                <div class="descripcion_egreso">Venta</div>
+                <div class="saldo_egreso">- 300.00
+                    <span class="porcentaje_egreso"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dato.js"></script>
+    <script src="js/ingreso.js"></script>
+    <script src="js/egreso.js"></script>
+    <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

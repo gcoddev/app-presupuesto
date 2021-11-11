@@ -1,0 +1,1 @@
+const funcionando = () => console.log("Funcionando");
