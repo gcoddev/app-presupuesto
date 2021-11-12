@@ -2,8 +2,8 @@
     margin: 0px
     padding: 0px
     box-sizing: border-box
-    font-family: 'Operator Mono'
-    font-size: 15px
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-size: 16px
 
 header
     width: 100%
@@ -37,7 +37,7 @@ header
             justify-content: space-between
             align-items: center
             border-radius: 5px
-            box-shadow: 2px 2px 3px 1px #1f1e1ecc
+            box-shadow: 1px 1px 4px 0px #1f1e1ecc
             position: relative
             overflow: hidden
             .saldo_info
@@ -45,7 +45,7 @@ header
                 align-items: center
                 position: relative
                 transform: translate(55px)
-                transition: transform .4s
+                transition: transform 1s
                 .porcentaje
                     margin-left: 10px
                     font-size: 0.75rem
@@ -59,7 +59,7 @@ header
             background-color: #ff500b
             &:hover .saldo_info
                 transform: translate(0)
-                transition: transform .4s
+                transition: transform .5s
 
 .agregar
     width: 100%
@@ -85,7 +85,7 @@ header
             border: none
             color: #03bb13
             ion-icon
-                font-size: 40px
+                font-size: 35px
                 &:hover
                     color: #037c0d
 
@@ -98,7 +98,7 @@ header
 
 @media screen and (max-width: 768px)
     *
-        font-size: 12px
+        font-size: 11px
 
     .form
         font-size: 14px

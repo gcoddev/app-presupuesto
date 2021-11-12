@@ -3,8 +3,8 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Operator Mono';
-  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -54,8 +54,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 3px 1px #1f1e1ecc;
-          box-shadow: 2px 2px 3px 1px #1f1e1ecc;
+  -webkit-box-shadow: 1px 1px 4px 0px #1f1e1ecc;
+          box-shadow: 1px 1px 4px 0px #1f1e1ecc;
   position: relative;
   overflow: hidden;
 }
@@ -70,10 +70,10 @@ header {
   position: relative;
   -webkit-transform: translate(55px);
           transform: translate(55px);
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .contenedor .informacion .ficha .saldo_info .porcentaje {
@@ -93,10 +93,10 @@ header {
 .contenedor .informacion .egresos:hover .saldo_info {
   -webkit-transform: translate(0);
           transform: translate(0);
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .agregar {
@@ -141,7 +141,7 @@ header {
 }
 
 .agregar .form .btn ion-icon {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .agregar .form .btn ion-icon:hover {
@@ -150,7 +150,7 @@ header {
 
 @media screen and (max-width: 768px) {
   * {
-    font-size: 12px;
+    font-size: 11px;
   }
   .form {
     font-size: 14px;
